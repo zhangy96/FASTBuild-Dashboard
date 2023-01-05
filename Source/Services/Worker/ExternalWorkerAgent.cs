@@ -191,8 +191,8 @@ namespace FastBuild.Dashboard.Services.Worker
 
 		private void InitializeWorker()
 		{
-			WinAPI.ShowWindow(_workerWindowPtr, WinAPI.ShowWindowCommands.SW_HIDE);
-			this.RemoveTrayIcon();
+			// WinAPI.ShowWindow(_workerWindowPtr, WinAPI.ShowWindowCommands.SW_HIDE);
+			// this.RemoveTrayIcon();
 
 			_workerProcessId = 1u;   // must not be NULL (0)
 			WinAPI.GetWindowThreadProcessId(_workerWindowPtr, ref _workerProcessId);
